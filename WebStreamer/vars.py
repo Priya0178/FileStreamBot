@@ -7,16 +7,16 @@ load_dotenv()
 
 
 class Var(object):
-    API_ID = int(getenv('API_ID'))
-    API_HASH = str(getenv('API_HASH'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN'))
+    API_ID = int(getenv('API_ID', '19397648'))
+    API_HASH = str(getenv('API_HASH', 'ed2db4aa6ab5f67fde7b88b8f17e85d0'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN', '6118504136:AAGXJxmkWUxYnF-AmMY3r2whsUrX60Kzf9A'))
     SESSION_NAME = str(getenv('SESSION_NAME', 'Moksh_b658'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
-    BIN_CHANNEL = int(getenv('BIN_CHANNEL'))
+    BIN_CHANNEL = int(getenv('BIN_CHANNEL', '-1001973449555'))
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
-    OWNER_ID = int(getenv('OWNER_ID', '797848243'))
+    OWNER_ID = int(getenv('OWNER_ID', '1092802988'))
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
     if 'DYNO' in environ:
